@@ -22,7 +22,7 @@ let useremail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 const BigInt = 123345457678n 
 
@@ -30,4 +30,53 @@ const BigInt = 123345457678n
 
 //  Refrence (non primitive ) datatypes
 
-//  Array , Object ,  Function
+//  Array , Object ,  Function   
+
+const heros = [ "shaktiman" , "Naagraj" , "Doga"];
+
+let myObj = {
+    name: "shahzain",
+    age: 22,
+}
+
+const myFunction = function(){
+    // console.log("Hellow World");
+    
+}
+
+// console.log(typeof anotherId);
+
+
+
+
+// ***********************************************************************************************************
+
+//*******************************/ types of Memory ******************************************
+
+// Stack and Heap
+
+// Stack Memory use in all ( primitives ) types
+
+// Heap Memory use in Non-Primitive types 
+
+let myYoutube = "Shahzin"
+
+let anotherYoutube = myYoutube
+
+anotherYoutube = "Bhatti"
+
+console.log(myYoutube);
+console.log(anotherYoutube);
+
+
+let userOne = {
+    email: "shahzain@google.com",
+    upi: "hellow@zain"
+}
+
+let userTwo = userOne
+
+userTwo.email = "bhatti@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
