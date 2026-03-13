@@ -15,14 +15,26 @@ const JsUser = {
 
 }
 
-console.log(JsUser.email);
-console.log(JsUser["email"]);
-console.log(JsUser["full name"]);
-console.log(JsUser[mySym]);
+// console.log(JsUser.email);
+// console.log(JsUser["email"]);
+// console.log(JsUser["full name"]);
+// console.log(JsUser[mySym]);
 
 // AND AGAR EMAIL KI VALUE KO CHAGE KARNA HAI TO
 JsUser.email = "shahzain@got.com" 
-Object.freeze(JsUser)
+// Object.freeze(JsUser)
 JsUser.email = "shahzain@facebook.com" 
 
-console.log(JsUser);
+// console.log(JsUser);
+
+
+JsUser.greeting = function (){
+    console.log("Hello JS User");
+    
+}
+JsUser.greetingTwo = function (){
+    console.log(`Hello JS User , ${this.name}`);
+    
+}
+console.log(JsUser.greeting());
+console.log(JsUser.greetingTwo()); 
